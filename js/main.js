@@ -1,25 +1,14 @@
-   document.addEventListener("DOMContentLoaded", () => {
-      const faders = document.querySelectorAll(".fade-in");
-      const options = {
-        threshold: 0.3
-      };
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("show");
-          }
-        });
-      }, options);
-      faders.forEach(el => observer.observe(el));
-    });
-      (() => {
-        'use strict';
-        const form = document.querySelector('#contact-form');
-        form.addEventListener('submit', event => {
-          if (!form.checkValidity()) {
-            event.preventDefault();
-            event.stopPropagation();
-          }
-          form.classList.add('was-validated');
-        }, false);
-      })();
+// Initialiseer EmailJS met je gebruikers-ID
+emailjs.init("your_user_id"); // Vervang dit met je eigen EmailJS gebruikers-ID
+
+// Zorg ervoor dat het formulier wordt verzonden via EmailJS
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();  // Voorkomt standaard formulierverzending
+
+    // Verstuur het formulier naar EmailJS
+    emailjs.sendForm('your_service_id', 'your_template_id', this)  // 'this' verwijst naar het formulier zelf
+        .then(
+            function() { alert('Bericht succesvol verzonden!'); },  // Succesvolle verzending
+            function() { alert('Het verzenden van het bericht is mislukt, probeer het opnieuw.'); }  // Fout bij verzending
+        );
+});

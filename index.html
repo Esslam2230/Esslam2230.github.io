@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Eslam Portfolio</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
@@ -10,144 +11,213 @@
   <link rel="stylesheet" href="/css/style.css">
 
 </head>
+
 <body class="bg-black text-white" data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="70" tabindex="0">
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top border-bottom border-info rounded-border-info">
-  <div class="container">
-    <a class="navbar-brand fw-bold text-info" href="#home">Eslam <span class="text-white">Portfolio</span></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <div class="navbar-nav">
-        <a class="nav-link active text-info" href="#home">Home</a>
-        <a class="nav-link text-white" href="#aboutme">About Me</a>
-        <a class="nav-link text-white" href="#projects">Projects</a>
-        <a class="nav-link text-white" href="#contact">Contact</a>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top border-bottom border-info shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-info" href="#home">
+        Eslam <span class="text-white">Portfolio</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav gap-2">
+          <li class="nav-item">
+            <a class="nav-link active text-info fw-semibold" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white fw-semibold" href="#aboutme">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white fw-semibold" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white fw-semibold" href="#contact">Contact</a>
+          </li>
+        </ul>
       </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
-<!-- Home -->
-<section id="home" class="py-5 mt-5 fade-in">
-  <div class="container d-flex flex-column flex-lg-row align-items-center justify-content-between gap-4">
-    <div class="text-center text-lg-start">
-      <h1 class="display-4 fw-bold">HI, I'm <span class="text-info">Eslam</span></h1>
-      <p class="lead">Welkom bij mijn portfolio. Mijn naam is Esslam en ik ben een gepassioneerde webontwikkelaar.</p>
-      <div class="d-flex gap-3 justify-content-center justify-content-lg-start mt-3">
-        <a href="#contact" class="btn btn-info fw-bold text-black shadow">Contact</a>
-        <a href="#projects" class="btn btn-outline-info fw-bold shadow">My Projects</a>
-      </div>
-    </div>
-    <div>
-      <img src="img/profielfoto.jpeg" alt="Profile" class="rounded-circle img-fluid shadow-lg" width="300" />
-    </div>
-  </div>
-</section>
 
-<!-- About Me -->
-<section id="aboutme" class="py-5 bg-dark text-white fade-in">
-  <div class="container">
-    <h2 class="text-center text-info mb-4">About Me</h2>
-    <p>Hallo! Mijn naam is Esslam Alsufyani en ik ben 19 jaar oud. Ik ben een tweedejaars student Software Development aan het ROC Mondriaan in Den Haag.</p>
 
-    <h3 class="text-center text-info mt-5 mb-4">Skills</h3>
-    <div class="mb-3">
-      <label>HTML</label>
-      <div class="progress bg-secondary">
-        <div class="progress-bar bg-info" style="width: 86%;">86%</div>
-      </div>
-    </div>
-    <div class="mb-3">
-      <label>CSS</label>
-      <div class="progress bg-secondary">
-        <div class="progress-bar bg-info" style="width: 60%;">60%</div>
-      </div>
-    </div>
-    <div class="mb-3">
-      <label>JavaScript</label>
-      <div class="progress bg-secondary">
-        <div class="progress-bar bg-info" style="width: 40%;">40%</div>
-      </div>
-    </div>
-
-    <div class="text-center mt-5">
-      <h4 class="mb-3">My CV</h4>
-      <a href="cv/Student CV.pdf" class="btn btn-info text-black fw-bold" download="Esslam_Alsufyani_CV.pdf">Download CV</a>
-    </div>
-  </div>
-</section>
-
-<!-- Projects -->
-<section id="projects" class="py-5 text-white bg-black">
-  <div class="container">
-    <h2 class="text-center text-info mb-5">My Projects</h2>
-    <div class="row g-4">
-      <div class="col-md-4 fade-in">
-        <div class="card bg-dark text-white h-100 shadow-lg rounded-border-info">
-          <img src="img/dobbelsteen-img.jpg" class="card-img-top" alt="Hoger Lager Game" style="height:250px; object-fit:cover;" />
-          <div class="card-body">
-            <h5 class="card-title text-info">Hoger Lager</h5>
-            <p class="card-text">Speel Hoger Lager tegen de computer! Gebouwd met HTML, CSS, en JavaScript.</p>
-            <a href="https://github.com/ROCMondriaanTIN/st-sd-project-p01-hogerlager-Esslam2230" class="btn btn-outline-info w-100">Go to GitHub</a>
+  <!-- Home -->
+  <section id="home" class="py-5 mt-5 bg-black text-white">
+    <div class="container">
+      <div class="row align-items-center gy-5">
+        <div class="col-lg-6 text-center text-lg-start">
+          <h1 class="display-4 fw-bold">
+            HI, I'm <span class="text-info">Eslam</span>
+          </h1>
+          <p class="lead">
+            Welkom bij mijn portfolio. Mijn naam is Esslam en ik ben een gepassioneerde webontwikkelaar. Ik ben 19
+            jaar oud en studeer momenteel Software Development
+          </p>
+          <div class="d-flex gap-3 justify-content-center justify-content-lg-start mt-4">
+            <a href="#contact" class="btn btn-info fw-bold text-black px-4 py-2 shadow">Contact</a>
+            <a href="#projects" class="btn btn-outline-info fw-bold px-4 py-2 shadow">My Projects</a>
           </div>
         </div>
-      </div>
-      <div class="col-md-4 fade-in">
-        <div class="card bg-dark text-white h-100 shadow-lg rounded-border-info">
-          <img src="img/x o afbeelding.png" class="card-img-top" alt="Tic Tac Toe" style="height:250px; object-fit:cover;" />
-          <div class="card-body">
-            <h5 class="card-title text-info">Build a Game</h5>
-            <p class="card-text">Tic Tac Toe met CSS Grid, HTML en JavaScript. Speel tegen speler of computer.</p>
-            <a href="https://github.com/ROCMondriaanTIN/st-sd-p02-project-build-a-game-emj/tree/main/eslam" class="btn btn-outline-info w-100">Go to GitHub</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 fade-in">
-        <div class="card bg-dark text-white h-100 shadow-lg rounded-border-info">
-          <img src="img/makeup_img.avif" class="card-img-top" alt="Review Experience" style="height:250px; object-fit:cover;" />
-          <div class="card-body">
-            <h5 class="card-title text-info">Review Your Experience</h5>
-            <p class="card-text">Gebruikers kunnen reviews geven over producten. Gemaakt met PHP, HTML, CSS.</p>
-            <a href="https://github.com/ROCMondriaanTIN/sd24-project-p03-review-your-experience-aminaeslam-beauty" class="btn btn-outline-info w-100">Go to GitHub</a>
-          </div>
+        <div class="col-lg-6 text-center">
+          <img src="img/profielfoto.jpeg" alt="Profile"
+            class="rounded-circle img-fluid border border-3 border-info shadow-lg" style="max-width: 280px;" />
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- Contact -->
-<section id="contact" class="py-5 bg-dark text-white fade-in">
-  <div class="container">
-    <h2 class="text-center text-info mb-4">Contact</h2>
-    <form id="contact-form" class="needs-validation mx-auto shadow-lg rounded-border-info" style="max-width: 600px;" novalidate>
+
+  <!-- About Me -->
+  <section id="aboutme" class="py-5 bg-dark text-white fade-in">
+    <div class="container">
+      <h2 class="text-center text-info mb-4">About Me</h2>
+      <p>
+        Hallo! Mijn naam is Esslam Alsufyani en ik ben 19 jaar oud. Ik ben een Software Developer in opleiding
+        en ik zit in mijn eerste jaar van MBO4 Softwareontwikkeling. Ik ben heel geïnteresseerd in technologie
+        en webontwikkeling en ik leer graag nieuwe dingen om mezelf te verbeteren.
+
+        Hoewel ik nog veel aan het leren ben, werk ik hard om mijn vaardigheden in HTML, CSS en JavaScript te
+        verbeteren. Ik focus me op het maken van gebruiksvriendelijke en snelle websites en apps. Ik wil mijn
+        kennis toepassen en mezelf blijven ontwikkelen als softwareontwikkelaar.
+
+        In de toekomst wil ik mijn vaardigheden verder verbeteren, nieuwe technologieën leren en werken aan
+        interessante projecten. Ik kijk ernaar uit om mijn eerste werkervaring op te doen en meer te leren.
+      </p>
+
+      <h3 class="text-center text-info mt-5 mb-4">Skills</h3>
       <div class="mb-3">
-        <label for="name" class="form-label">Naam</label>
-        <input type="text" class="form-control " id="name" required>
-        <div class="invalid-feedback">Vul je naam in.</div>
+        <label>HTML</label>
+        <div class="progress bg-secondary">
+          <div class="progress-bar bg-info" style="width: 70%;">70%</div>
+        </div>
       </div>
       <div class="mb-3">
-        <label for="email" class="form-label">E-mail</label>
-        <input type="email" class="form-control" id="email" required>
-        <div class="invalid-feedback">Vul een geldig e-mailadres in.</div>
+        <label>CSS</label>
+        <div class="progress bg-secondary">
+          <div class="progress-bar bg-info" style="width: 60%;">60%</div>
+        </div>
       </div>
       <div class="mb-3">
-        <label for="message" class="form-label">Bericht</label>
-        <textarea class="form-control" id="message" rows="4" required></textarea>
-        <div class="invalid-feedback">Typ een bericht.</div>
+        <label>JavaScript</label>
+        <div class="progress bg-secondary">
+          <div class="progress-bar bg-info" style="width: 50%;">50%</div>
+        </div>
       </div>
-      <button type="submit" class="btn btn-info">Verstuur</button>
-    </form>
-    <div class="d-flex justify-content-center gap-4 mt-4">
-      <a href="mailto:eeslamalusfyani@gmail.com" target="_blank"><img src="img/mail.png" width="40" /></a>
-      <a href="https://github.com/Esslam2230" target="_blank"><img src="img/github.png" width="40" /></a>
-      <a href="https://instagram.com/es.lam3205" target="_blank"><img src="img/instagram.png" width="40" /></a>
+      <div class="mb-3">
+        <label>JavaScript</label>
+        <div class="progress bg-secondary">
+          <div class="progress-bar bg-info" style="width: 40%;">40%</div>
+        </div>
+      </div>
+
+      <div class="text-center mt-5">
+        <h4 class="mb-3">My CV</h4>
+        <a href="cv/Eslam_Alsufyani_CVn.pdf" class="btn btn-info text-black fw-bold" download="Esslam_Alsufyani_CV.pdf">
+          Download CV
+        </a>
+      </div>
     </div>
-  </div>
-</section>
-<script src="/js/main.js"></script>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-5 text-white bg-black">
+    <div class="container">
+      <h2 class="text-center text-info mb-5">My Projects</h2>
+      <div class="row g-4">
+
+        <!-- Project 1 -->
+        <div class="col-md-4">
+          <div class="card bg-dark text-white h-100 border-info border rounded-4 shadow">
+            <img src="img/dobbelsteen-img.jpg" class="card-img-top" alt="Hoger Lager Game"
+              style="height: 250px; object-fit: cover;">
+            <div class="card-body">
+              <h5 class="card-title text-info">Hoger Lager</h5>
+              <p class="card-text">Hoger Lager Game
+                Speel Hoger Lager tegen de computer! Raad het getal tussen een minimum- en maximumwaarde. De
+                computer geeft aanwijzingen of je hoger of lager moet gokken.
+                Gebouwd met HTML, CSS, en JavaScript.</p>
+              <a href="https://github.com/ROCMondriaanTIN/st-sd-project-p01-hogerlager-Esslam2230"
+                class="btn btn-outline-info w-100">Go to GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="col-md-4">
+          <div class="card bg-dark text-white h-100 border-info border rounded-4 shadow">
+            <img src="img/x o afbeelding.png" class="card-img-top" alt="Tic Tac Toe"
+              style="height: 250px; object-fit: cover;">
+            <div class="card-body">
+              <h5 class="card-title text-info">Build a Game</h5>
+              <p class="card-text">Tic Tac Toe Game
+                Dit is een Tic Tac Toe-spel dat je kunt spelen tegen een andere speler of tegen de computer.
+                Het is gemaakt met HTML, CSS en JavaScript. Het spel maakt gebruik van CSS Grid voor het
+                dynamische raster,
+                waardoor het spel eenvoudig te spelen is op zowel mobiel als desktop.</p>
+              <a href="https://github.com/ROCMondriaanTIN/st-sd-p02-project-build-a-game-emj/tree/main/eslam"
+                class="btn btn-outline-info w-100">Go to GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="col-md-4">
+          <div class="card bg-dark text-white h-100 border-info border rounded-4 shadow">
+            <img src="img/makeup_img.avif" class="card-img-top" alt="Review Experience"
+              style="height: 250px; object-fit: cover;">
+            <div class="card-body">
+              <h5 class="card-title text-info">Review Your Experience</h5>
+              <p class="card-text">Dit project stelt gebruikers in staat om hun ervaringen te beoordelen en feedback te
+                geven.
+                Het is gemaakt met PHP, HTML, CSS en een database. Het biedt een gebruiksvriendelijke interface voor het
+                indienen van beoordelingen.
+                Dit project is gemaakt door Amina en mij. We hebben gekozen om een project te maken waarin gebruikers
+                hun ervaringen met producten of diensten kunnen beoordelen
+              </p>
+              <a href="https://github.com/ROCMondriaanTIN/sd24-project-p03-review-your-experience-aminaeslam-beauty"
+                class="btn btn-outline-info w-100">Go to GitHub</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Contact -->
+  <section id="contact" class="py-5 bg-dark text-white fade-in">
+    <div class="container">
+      <h2 class="text-center text-info mb-4">Contact</h2>
+      <form id="contact-form" class="needs-validation mx-auto shadow-lg" style="max-width: 600px;" novalidate>
+        <div class="mb-3">
+          <label for="name" class="form-label">Naam</label>
+          <input type="text" class="form-control border-info" id="name" required>
+          <div class="invalid-feedback">Vul je naam in.</div>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">E-mail</label>
+          <input type="email" class="form-control border-info" id="email" required>
+          <div class="invalid-feedback">Vul een geldig e-mailadres in.</div>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Bericht</label>
+          <textarea class="form-control border-info" id="message" rows="4" required></textarea>
+          <div class="invalid-feedback">Typ een bericht.</div>
+        </div>
+        <button type="submit" class="btn btn-outline-info w-100">Verstuur</button>
+      </form>
+      <div class="d-flex justify-content-center gap-4 mt-4">
+        <a href="mailto:eeslamalusfyani@gmail.com" target="_blank"><img src="img/mail.png" width="40" /></a>
+        <a href="https://github.com/Esslam2230" target="_blank"><img src="img/github.png" width="40" /></a>
+        <a href="https://instagram.com/" target="_blank"><img src="img/instagram.png" width="40" /></a>
+      </div>
+    </div>
+  </section>
+  <script src="/js/main.js"></script>
 </body>
+
 </html>
